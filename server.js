@@ -118,7 +118,8 @@ app.post("/create-order", (req, res) => {
 ========================= */
 const PORT = process.env.PORT || 3001;
 app.get("/", (req, res) => {
-  res.send("Servidor funcionando 🚀");
+  res.sendFile(path.join(__dirname, "index.html"));
+});
 });
 app.listen(PORT, () => {
   console.log(`Servidor corriendo en puerto ${PORT}`);
