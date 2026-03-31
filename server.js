@@ -7,6 +7,7 @@ import cors from "cors";
 import fetch from "node-fetch";
 
 const app = express();
+app.use(express.static(__dirname));
 app.use(cors());
 app.use(express.json());
 
